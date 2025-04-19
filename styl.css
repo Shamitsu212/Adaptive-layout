@@ -6,10 +6,9 @@
 {
     margin: 0;
     padding: 0;
-    
-    width: 100%;
+
     min-width: 300px;
-    max-width: 1920px;
+    max-width: 100%;
     height: auto;
 
     position: relative;
@@ -49,14 +48,15 @@
 {
     .container {
         max-width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
     }
 }
 
 .header_img
 {
     width: 100%;
+    min-width: none;
+    min-height: 70px;
+    height: auto;
 }
 .container_element
 {
@@ -64,7 +64,7 @@
     margin-bottom: 3%;
 
     min-width: none;
-    max-width: 1020px;
+    max-width: 55%;
 
     display: flex;
     justify-content: center;
@@ -84,9 +84,9 @@
 .container_hero 
 {
     min-width: 100%;
-    max-width: 1920px;
-    height: 400px;  
+    max-width: none;
     min-height: 350px;
+    height: auto;
     
     background: url('./image/head.png') no-repeat center center;
     background-size: cover;  
@@ -107,30 +107,34 @@
 }
 .container_hero_background
 {
+    background: url('');
     background-color: #333333 ;
 }
-.container_members
-{
-    min-width: none;
-    max-width: 1920px;
+.container_members {
+    width: 100%;
+    max-width: none;
+    min-height: 350px;
+    height: auto;
+
+    padding: 15px;
 
     background: #EEEEEE;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
+
 .container_members_cards
 {
     min-width: none;
-    max-width: 1120px;
-    min-height: 350px;
-    max-height: 400px;
+    max-width: 52%;
 
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2%;
 }
 .container_members_cards_card
@@ -143,7 +147,7 @@
 .container_hero_text
 {
     min-width: none;
-    max-width: 1620px;
+    max-width: 75%;
 
     color: white;
 
