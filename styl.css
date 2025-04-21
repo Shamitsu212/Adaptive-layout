@@ -138,17 +138,30 @@
     min-width: none;
     max-width: 52%;
 
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 15px;
+    column-gap: 15px;
+    
 }
 .container_members_cards_card
 {
+    display: inline-grid;
+
+    min-width: none;
+    max-width: 300px;
+    min-height: none;
+    max-height: 250px;
+
     background-color: white;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     
     border-radius: 8px;
+}
+.container_members_cards_image
+{
+    width: 100%;
+    height: 100%
 }
 .container_hero_text
 {
