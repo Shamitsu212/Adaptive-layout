@@ -1,8 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-.container
+    box-sizing: border-box;
+  }
+  ul, ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: normal;
+  }
+  body {
+    line-height: 1;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+.pageContainer
 {
     margin: 0;
     padding: 0;
@@ -22,55 +62,68 @@
 }
 @media (max-width: 1200px) 
 {
-    .container {
+    .pageContainer {
         max-width: 1140px;
     }
 }
 @media (max-width: 992px) 
 {
-    .container {
+    .pageContainer {
         max-width: 960px;
     }
 }
 @media (max-width: 768px) 
 {
-    .container {
+    .pageContainer {
         max-width: 720px;
     }
 }
 @media (max-width: 576px) 
 {
-    .container {
+    .pageContainer {
         max-width: 540px;
     }
 }
 @media (max-width: 400px) 
 {
-    .container {
+    .pageContainer {
         max-width: 100%;
     }
 }
-.header
+.pageContainer__header
 {
     width: 100%;
-    min-width: none;
     min-height: 70px;
     height: auto;
 }
-.header_img
+.header__img
 {
     width: 100%;
-    min-width: none;
     min-height: 70px;
     height: auto;
 }
-.container_element
+.pageContainer__ContentContainer{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: sans-serif;
+}
+.ContentContainer__TextSection
 {
     margin-top: 3%;
     margin-bottom: 3%;
 
-    min-width: none;
-    max-width: 55%;
+    max-width: 100%;
 
     display: flex;
     justify-content: center;
@@ -79,18 +132,23 @@
     gap: 15px;
     word-wrap: break-word;
 }
-.container_element_text:last-child
+.TextSection__Text:last-child
 {
     align-self: start;
 }
-.container_element_startText
+.TextSection__Text--start
 {
     align-self: start;
 }
-.container_hero 
+.TextSection__Text--center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContentContainer__BackgroundSection
 {
     min-width: 100%;
-    max-width: none;
     min-height: 350px;
     height: auto;
     
@@ -105,20 +163,24 @@
     align-items: center;
     flex-direction: column;
 }
-.container_hero_image2 
+.ContentContainer__BackgroundSection--background2 
 {
     background: url('./image/Hero.png') no-repeat center center;
     background-size: cover;
     min-height: 350px;  
 }
-.container_hero_background
+.ContentContainer__BackgroundSection--backgroundColor
 {
     background: url('');
     background-color: #333333 ;
 }
-.container_members {
+.BackgroundSection__text
+{
+    color: white;
+    font-size: 42px;
+}
+.ContentContainer__ActorsContainer {
     width: 100%;
-    max-width: none;
     min-height: 350px;
     height: auto;
 
@@ -133,9 +195,8 @@
     gap: 30px;
 }
 
-.container_members_cards
+.ActorsContainer__cardContainer
 {
-    min-width: none;
     max-width: 52%;
 
     display:grid;
@@ -144,13 +205,11 @@
     column-gap: 15px;
     
 }
-.container_members_cards_card
+.cardContainer__card
 {
     display: inline-grid;
 
-    min-width: none;
     max-width: 300px;
-    min-height: none;
     max-height: 250px;
 
     background-color: white;
@@ -158,29 +217,16 @@
     
     border-radius: 8px;
 }
-.container_members_cards_image
+.card__image
 {
     width: 100%;
     height: 100%
 }
-.container_hero_text
-{
-    min-width: none;
-    max-width: 75%;
-
-    color: white;
-
-}
-.Image_text
-{
-    color: white;
-    font-size: 42px;
-}
-.Image_text_bold
+.Text--bold
 {
     font-weight: bold;
 }
-.Image_text_Green
+.Text--Green
 {
     color: #007765;
     font-size: 42px;
