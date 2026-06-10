@@ -11,7 +11,7 @@
 
 ## 🖼️ Превью макета
 
-  Ccылка - https://shamitsu212.github.io/Adaptive_layout/
+  Ccылка - https://shamitsu212.github.io/Adaptive-layout/
 
  <img src="./Preview/1.png" width="250" />
 
