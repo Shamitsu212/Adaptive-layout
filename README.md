@@ -12,11 +12,10 @@
 
 ---
 
-## 🖼️ Превью макетов
+## 🖼️ Превью макета
 
-| Макет | Превью | Ссылка на код |
-|-------|--------|---------------|
-| Макет 1 | <img src="./Preview/1.png" width="250" /> | [🔗 Код](https://github.com/Shamitsu212/figma-to-html/tree/main/figma1) |
-| Макет 2 | <img src="./Preview/2.png" width="250" /> | [🔗 Код](https://github.com/Shamitsu212/figma-to-html/tree/main/figma2) |
+  Ccылка - https://shamitsu212.github.io/Adaptive_layout1/
+
+ <img src="./Preview/1.png" width="250" />
 
 ---
